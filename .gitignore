@@ -41,3 +41,5 @@ MANIFEST
 
 # Environment variables
 .env*
+
+*/chroma_db/*
