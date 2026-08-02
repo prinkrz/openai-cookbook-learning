@@ -1,6 +1,6 @@
 # OpenAI Cookbook Learning Roadmap with Resources
 
-The roadmap below maps each chapter to a **primary learning resource**, relevant **Cookbook recipes**, and a practical outcome. Because the Cookbook is continuously updated, use its topic pages as the live index and individual recipes as hands-on chapters. ([OpenAI Developers][1])
+The roadmap below maps each chapter to a **primary learning resource**, relevant **Cookbook recipes**, and a practical outcome. Because the Cookbook is continuously updated, use its topic pages as the live index and individual recipes as hands-on chapters.
 
 ## Phase 1 — API foundations
 
@@ -8,21 +8,13 @@ The roadmap below maps each chapter to a **primary learning resource**, relevant
 
 **Topics**
 
-* OpenAI SDK setup
-* API keys and environment variables
-* Responses API
-* Request and response structure
-* Streaming
-* Token usage
-* Errors, retries and rate limits
-
-**Study resources**
-
-1. [OpenAI API documentation](https://developers.openai.com/api/docs)
-2. [API reference overview](https://developers.openai.com/api/reference/overview/)
-3. [OpenAI Cookbook](https://developers.openai.com/cookbook)
-4. [Responses API reference](https://developers.openai.com/api/reference/responses/)
-5. [Cookbook: How to handle rate limits](https://developers.openai.com/cookbook/examples/how_to_handle_rate_limits)
+* [OpenAI SDK setup](https://developers.openai.com/api/docs/quickstart#install-the-openai-sdk-and-run-an-api-call)
+* [API keys and environment variables](https://developers.openai.com/api/docs/quickstart#create-and-export-an-api-key)
+* [Responses API](https://developers.openai.com/api/docs/guides/migrate-to-responses)
+* [Request and response structure](https://developers.openai.com/api/reference/resources/responses)
+* [Streaming](https://openai.github.io/openai-agents-python/streaming)
+* [Token usage](https://developers.openai.com/api/docs/guides/token-counting)
+* [Errors, retries and rate limits](https://developers.openai.com/api/docs/guides/rate-limits#error-mitigation)
 
 **Practice**
 
@@ -34,21 +26,13 @@ Create a Python command-line assistant that streams its answer, displays token u
 
 **Topics**
 
-* Model families
-* Reasoning versus non-reasoning models
-* Speed, quality and cost
-* Context windows
-* Reasoning effort
-* Model fallback
-* Task-based model routing
-
-**Study resources**
-
-1. [Models overview](https://developers.openai.com/api/docs/models)
-2. [Compare OpenAI models](https://developers.openai.com/api/docs/models/compare)
-3. [Reasoning models guide](https://developers.openai.com/api/docs/guides/reasoning)
-4. [Cookbook: Practical Guide for Model Selection](https://developers.openai.com/cookbook/examples/partners/model_selection_guide/model_selection_guide)
-5. [Cookbook Text collection](https://developers.openai.com/cookbook/topic/text)
+* [Model families](https://developers.openai.com/api/docs/models)
+* [Reasoning versus non-reasoning models](https://developers.openai.com/api/docs/guides/reasoning)
+* [Speed, quality and cost](https://developers.openai.com/api/docs/guides/model-selection#2-optimize-cost-and-latency)
+* [Context windows](https://developers.openai.com/api/docs/guides/reasoning#managing-the-context-window)
+* [Reasoning effort](https://developers.openai.com/api/docs/guides/reasoning#reasoning-effort)
+* [Model fallback](https://developers.openai.com/api/docs/guides/production-best-practices)
+* [Task-based model routing](https://developers.openai.com/api/docs/guides/agents/models)
 
 **Practice**
 
@@ -60,7 +44,7 @@ Run 20 representative tasks through different models and compare:
 * Estimated cost
 * Output consistency
 
-The official model comparison page should be treated as the current source for supported capabilities, context limits and pricing because these details change over time. ([OpenAI Developers][2])
+The official model comparison page should be treated as the current source for supported capabilities, context limits and pricing because these details change over time.
 
 ---
 
@@ -70,24 +54,16 @@ The official model comparison page should be treated as the current source for s
 
 **Topics**
 
-* Instruction hierarchy
-* Developer and user messages
-* Clear objectives
-* Context placement
-* Delimiters
-* Few-shot examples
-* Acceptance criteria
-* Long-context prompting
-* Prompt migration
-* Prompt iteration
-
-**Study resources**
-
-1. [Prompt engineering guide](https://developers.openai.com/api/docs/guides/prompt-engineering)
-2. [Cookbook: GPT-4.1 Prompting Guide](https://developers.openai.com/cookbook/examples/gpt4-1_prompting_guide)
-3. [Cookbook Text collection](https://developers.openai.com/cookbook/topic/text)
-4. [Reasoning best practices](https://developers.openai.com/api/docs/guides/reasoning-best-practices)
-5. [Prompt optimizer](https://developers.openai.com/api/docs/guides/prompt-optimizer)
+* [Instruction hierarchy](https://developers.openai.com/api/docs/guides/prompt-engineering)
+* [Developer and user messages](https://developers.openai.com/api/docs/guides/prompt-engineering#message-roles-and-instruction-following)
+* [Clear objectives](https://developers.openai.com/api/docs/guides/prompt-engineering#developer-messages)
+* [Context placement](https://developers.openai.com/cookbook/examples/gpt4-1_prompting_guide)
+* [Delimiters](https://developers.openai.com/api/docs/guides/prompt-engineering#prompt-engineering)
+* [Few-shot examples](https://developers.openai.com/plugins/build/examples#few-shot-learning)
+* [Acceptance criteria](https://developers.openai.com/api/docs/guides/evaluation-best-practices#evaluate-early-and-often)
+* [Long-context prompting](https://developers.openai.com/api/docs/guides/prompt-engineering#version-prompts-in-code)
+* [Prompt migration](https://developers.openai.com/api/docs/guides/prompt-guidance-gpt-5p6#prompt-migration-workflow)
+* [Prompt iteration](https://developers.openai.com/api/docs/guides/prompt-optimizer)
 
 **Suggested study order**
 
@@ -109,23 +85,15 @@ Create five versions of the same prompt and measure which version produces the h
 
 **Topics**
 
-* JSON generation
-* JSON Schema
-* Pydantic models
-* Required and optional fields
-* Enumerations
-* Nested objects
-* Schema validation
-* Refusal handling
-* Schema versioning
-
-**Study resources**
-
-1. [Structured Outputs guide](https://developers.openai.com/api/docs/guides/structured-outputs)
-2. [Cookbook: Introduction to Structured Outputs](https://developers.openai.com/cookbook/examples/structured_outputs_intro)
-3. [Cookbook: Structured Outputs for Multi-Agent Systems](https://developers.openai.com/cookbook/examples/structured_outputs_multi_agent)
-4. [Cookbook: Structured Outputs Evaluation](https://developers.openai.com/cookbook/examples/evaluation/use-cases/structured-outputs-evaluation)
-5. [Function calling guide](https://developers.openai.com/api/docs/guides/function-calling)
+* [JSON generation](https://developers.openai.com/api/docs/guides/structured-outputs#json-mode)
+* [JSON Schema](https://developers.openai.com/api/docs/guides/structured-outputs#tips-for-your-json-schema)
+* [Pydantic models](https://developers.openai.com/api/docs/guides/structured-outputs)
+* [Required and optional fields](https://developers.openai.com/api/docs/guides/structured-outputs#all-fields-must-be-required)
+* [Enumerations](https://developers.openai.com/cookbook/examples/structured_outputs_intro)
+* [Nested objects](https://developers.openai.com/api/docs/guides/structured-outputs#objects-have-limitations-on-nesting-depth-and-size)
+* [Schema validation](https://developers.openai.com/cookbook/examples/structured_outputs_multi_agent)
+* [Refusal handling](https://developers.openai.com/api/docs/guides/structured-outputs#refusals-with-structured-outputs)
+* [Schema versioning](https://json-schema.org/learn/getting-started-step-by-step)
 
 **Practice projects**
 
@@ -135,7 +103,7 @@ Create five versions of the same prompt and measure which version produces the h
 * Support-ticket classifier
 * Architecture-requirement extractor
 
-Structured Outputs constrains model responses to a supplied JSON Schema, making it an important foundation for tool use and production integrations. ([OpenAI Developers][3])
+Structured Outputs constrains model responses to a supplied JSON Schema, making it an important foundation for tool use and production integrations.
 
 ---
 
@@ -143,24 +111,16 @@ Structured Outputs constrains model responses to a supplied JSON Schema, making 
 
 **Topics**
 
-* Classification
-* Summarization
-* Translation
-* Rewriting
-* Information extraction
-* Question answering
-* Intent detection
-* Sentiment analysis
-* Code generation
-* Document comparison
-
-**Study resources**
-
-1. [Text generation guide](https://developers.openai.com/api/docs/guides/text)
-2. [Cookbook Text collection](https://developers.openai.com/cookbook/topic/text)
-3. [Cookbook: Summarizing long documents](https://developers.openai.com/cookbook/examples/summarizing_long_documents)
-4. [Batch API guide](https://developers.openai.com/api/docs/guides/batch)
-5. [Cookbook: Batch processing](https://developers.openai.com/cookbook/examples/batch_processing)
+* [Classification](https://developers.openai.com/cookbook/examples/multiclass_classification_for_transactions)
+* [Summarization](https://developers.openai.com/cookbook/examples/summarizing_long_documents)
+* [Translation](https://developers.deepl.com/docs/best-practices/working-with-context)
+* [Rewriting](https://developers.openai.com/api/docs/guides/text#message-roles-and-instruction-following)
+* [Information extraction](https://developers.openai.com/cookbook/examples/entity_extraction_for_long_documents)
+* [Question answering](https://developers.openai.com/cookbook/examples/question_answering_using_embeddings)
+* [Intent detection](https://developers.openai.com/cookbook/examples/multiclass_classification_for_transactions#zero-shot-classification)
+* [Sentiment analysis](https://developers.openai.com/api/docs/tutorials/meeting-minutes#sentiment-analysis)
+* [Code generation](https://developers.openai.com/api/docs/guides/code-generation)
+* [Document comparison](https://developers.openai.com/api/docs/guides/prompt-engineering#few-shot-learning)
 
 **Practice**
 
@@ -188,25 +148,17 @@ Validated JSON
 
 **Topics**
 
-* Function definitions
-* Tool schemas
-* Tool selection
-* Tool-call arguments
-* Multiple tool calls
-* Parallel tool calls
-* Tool result submission
-* Input validation
-* Idempotency
-* Error handling
-* Human approval
-
-**Study resources**
-
-1. [Function calling guide](https://developers.openai.com/api/docs/guides/function-calling)
-2. [Using tools guide](https://developers.openai.com/api/docs/guides/tools)
-3. [Cookbook: How to call functions with chat models](https://developers.openai.com/cookbook/examples/how_to_call_functions_with_chat_models)
-4. [Cookbook: Parallel function calling](https://developers.openai.com/cookbook/examples/how_to_call_functions_for_knowledge_retrieval)
-5. [Structured Outputs guide](https://developers.openai.com/api/docs/guides/structured-outputs)
+* [Function definitions](https://developers.openai.com/api/docs/guides/function-calling)
+* [Tool schemas](https://developers.openai.com/api/docs/guides/function-calling#the-tool-calling-flow)
+* [Tool selection](https://developers.openai.com/api/docs/guides/function-calling#tool-choice)
+* [Tool-call arguments](https://developers.openai.com/api/docs/guides/tools)
+* [Multiple tool calls](https://developers.openai.com/cookbook/examples/how_to_call_functions_with_chat_models)
+* [Parallel tool calls](https://developers.openai.com/api/docs/guides/function-calling#parallel-function-calling)
+* [Tool result submission](https://developers.openai.com/api/docs/guides/function-calling#handling-function-calls)
+* [Input validation](https://owasp.org/www-project-top-10-for-large-language-model-applications)
+* [Idempotency](https://stripe.com/docs/idempotency)
+* [Error handling](https://openai.github.io/openai-agents-python/running_agents)
+* [Human approval](https://developers.openai.com/api/docs/guides/node-reference#human-approval)
 
 **Practice**
 
@@ -218,7 +170,7 @@ Build an assistant with application-controlled tools for:
 * Database search
 * Internal documentation search
 
-Function calling connects models to external data and application capabilities, but the application should validate arguments and control execution. ([OpenAI Developers][4])
+Function calling connects models to external data and application capabilities, but the application should validate arguments and control execution.
 
 ---
 
@@ -226,26 +178,16 @@ Function calling connects models to external data and application capabilities, 
 
 **Topics**
 
-* Responses API
-* Conversation state
-* Previous response IDs
-* Web search
-* File search
-* Code execution
-* Tool citations
-* Multi-turn workflows
-* Background processing
-* Tool permissions
-
-**Study resources**
-
-1. [Responses API reference](https://developers.openai.com/api/reference/responses/)
-2. [Using tools](https://developers.openai.com/api/docs/guides/tools)
-3. [Web search guide](https://developers.openai.com/api/docs/guides/tools-web-search)
-4. [File search guide](https://developers.openai.com/api/docs/guides/tools-file-search)
-5. [Code Interpreter guide](https://developers.openai.com/api/docs/guides/tools-code-interpreter)
-6. [Conversation state guide](https://developers.openai.com/api/docs/guides/conversation-state)
-7. [Background mode](https://developers.openai.com/api/docs/guides/background)
+* [Responses API](https://developers.openai.com/api/docs/guides/tools-web-search#responses-api)
+* [Conversation state](https://developers.openai.com/api/docs/guides/conversation-state)
+* [Previous response IDs](https://developers.openai.com/api/docs/guides/conversation-state#openai-managed-conversation-state)
+* [Web search](https://developers.openai.com/api/docs/guides/tools-web-search)
+* [File search](https://developers.openai.com/api/docs/guides/tools-file-search)
+* [Code execution](https://developers.openai.com/api/docs/guides/tools-code-interpreter)
+* [Tool citations](https://developers.openai.com/api/docs/guides/citation-formatting#format-citations-for-retrieved-tool-context)
+* [Multi-turn workflows](https://developers.openai.com/api/docs/guides/tools-shell#multi-turn-workflows)
+* [Background processing](https://developers.openai.com/api/docs/guides/background#polling-background-responses)
+* [Tool permissions](https://developers.openai.com/api/docs/guides/terraform/project-controls)
 
 **Practice**
 
@@ -263,25 +205,16 @@ Build a research assistant that:
 
 **Topics**
 
-* Embedding vectors
-* Semantic similarity
-* Cosine similarity
-* Semantic search
-* Classification
-* Clustering
-* Recommendations
-* Deduplication
-* Batch embedding
-* Vector databases
-
-**Study resources**
-
-1. [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings)
-2. [Embedding models](https://developers.openai.com/api/docs/models#embeddings)
-3. [Cookbook: Using embeddings](https://developers.openai.com/cookbook/examples/using_embeddings)
-4. [Cookbook: Semantic text search using embeddings](https://developers.openai.com/cookbook/examples/semantic_text_search_using_embeddings)
-5. [Cookbook: Clustering using embeddings](https://developers.openai.com/cookbook/examples/clustering)
-6. [Cookbook: Classification using embeddings](https://developers.openai.com/cookbook/examples/classification_using_embeddings)
+* [Embedding vectors](https://developers.openai.com/api/docs/guides/embeddings)
+* [Semantic similarity](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html)
+* [Cosine similarity](https://developers.openai.com/cookbook/examples/semantic_text_search_using_embeddings)
+* [Semantic search](https://developers.openai.com/api/docs/guides/retrieval#semantic-search)
+* [Classification](https://developers.openai.com/cookbook/examples/classification_using_embeddings)
+* [Clustering](https://developers.openai.com/cookbook/examples/clustering)
+* [Recommendations](https://developers.openai.com/cookbook/examples/recommendation_using_embeddings)
+* [Deduplication](https://developers.openai.com/api/docs/guides/embeddings#use-cases)
+* [Batch embedding](https://developers.openai.com/api/docs/guides/embeddings#embedding-models)
+* [Vector databases](https://developers.openai.com/api/docs/actions/data-retrieval#middleware-for-vector-databases)
 
 **Practice**
 
@@ -293,28 +226,19 @@ Create a semantic search engine for architecture documents and compare it with k
 
 **Topics**
 
-* Document ingestion
-* Chunking
-* Chunk overlap
-* Metadata
-* Vector stores
-* Semantic retrieval
-* Hybrid retrieval
-* Query rewriting
-* Reranking
-* Context assembly
-* Grounded answers
-* Citations
-* Retrieval evaluation
-
-**Study resources**
-
-1. [Retrieval guide](https://developers.openai.com/api/docs/guides/retrieval)
-2. [File search guide](https://developers.openai.com/api/docs/guides/tools-file-search)
-3. [Vector stores API](https://developers.openai.com/api/reference/vector-stores/)
-4. [Cookbook: PDF RAG with File Search](https://developers.openai.com/cookbook/examples/file_search_responses)
-5. [Cookbook: Question answering using embeddings](https://developers.openai.com/cookbook/examples/question_answering_using_embeddings)
-6. [Cookbook: Deep Research API introduction](https://developers.openai.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api)
+* [Document ingestion](https://developers.openai.com/api/docs/guides/retrieval)
+* [Chunking](https://developers.openai.com/api/docs/guides/retrieval#chunking)
+* [Chunk overlap](https://www.pinecone.io/learn/chunking-strategies)
+* [Metadata](https://developers.openai.com/plugins/guides/optimize-metadata)
+* [Vector stores](https://developers.openai.com/api/docs/guides/retrieval#vector-stores)
+* [Semantic retrieval](https://developers.openai.com/api/docs/guides/retrieval#performing-semantic-search)
+* [Hybrid retrieval](https://www.elastic.co/what-is/hybrid-search)
+* [Query rewriting](https://developers.openai.com/api/docs/guides/retrieval#query-rewriting)
+* [Reranking](https://www.sbert.net/examples/sparse_encoder/applications/retrieve_rerank/README.html)
+* [Context assembly](https://developers.openai.com/api/docs/guides/tools-file-search#include-search-results-in-the-response)
+* [Grounded answers](https://developers.openai.com/api/docs/guides/prompt-guidance-gpt-5p6#grounding-citations-and-retrieval-budgets)
+* [Citations](https://developers.openai.com/api/docs/guides/citation-formatting#citations)
+* [Retrieval evaluation](https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_precision)
 
 **Practice**
 
@@ -327,7 +251,7 @@ Build a PDF knowledge assistant that:
 * Returns “insufficient evidence” when appropriate
 * Measures retrieval recall separately from answer quality
 
-The Deep Research API Cookbook demonstrates workflows involving reasoning, planning and synthesis across external information. ([OpenAI Developers][5])
+The Deep Research API Cookbook demonstrates workflows involving reasoning, planning and synthesis across external information.
 
 ---
 
@@ -337,24 +261,16 @@ The Deep Research API Cookbook demonstrates workflows involving reasoning, plann
 
 **Topics**
 
-* Image input
-* Multiple images
-* Image resolution
-* OCR
-* Chart analysis
-* Screenshot understanding
-* Diagram interpretation
-* PDF-page analysis
-* Visual question answering
-* Structured visual extraction
-
-**Study resources**
-
-1. [Images and vision guide](https://developers.openai.com/api/docs/guides/images-vision)
-2. [Cookbook Multimodal collection](https://developers.openai.com/cookbook/topic/multimodal)
-3. [Cookbook: GPT-5.4 Vision and Document Understanding](https://developers.openai.com/cookbook/examples/multimodal/document_and_multimodal_understanding_tips)
-4. [Cookbook: Introduction to GPT-4o](https://developers.openai.com/cookbook/examples/gpt4o/introduction_to_gpt4o)
-5. [Cookbook: Image Understanding with RAG](https://developers.openai.com/cookbook/examples/multimodal/image_understanding_with_rag)
+* [Image input](https://developers.openai.com/api/docs/guides/images-vision)
+* [Multiple images](https://developers.openai.com/api/docs/guides/images-vision#analyze-multiple-images)
+* [Image resolution](https://developers.openai.com/api/docs/guides/images-vision#specify-image-input-detail-level)
+* [OCR](https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html)
+* [Chart analysis](https://developers.openai.com/api/docs/guides/file-inputs#non-pdf-image-and-chart-limitations)
+* [Screenshot understanding](https://developers.openai.com/cookbook/examples/multimodal/image_understanding_with_rag)
+* [Diagram interpretation](https://developers.openai.com/cookbook/examples/multimodal/document_and_multimodal_understanding_tips)
+* [PDF-page analysis](https://developers.openai.com/api/docs/guides/file-inputs#pdf-detail-levels)
+* [Visual question answering](https://developers.openai.com/api/docs/guides/images-vision#analyze-images)
+* [Structured visual extraction](https://developers.openai.com/cookbook/examples/multimodal/using_gpt4_vision_with_function_calling)
 
 **Practice**
 
@@ -367,7 +283,7 @@ Create an architecture-document analyzer that understands:
 * Scanned pages
 * Configuration screenshots
 
-The current multimodal Cookbook area covers text, images, audio and video-related workflows. ([OpenAI Developers][6])
+The current multimodal Cookbook area covers text, images, audio and video-related workflows.
 
 ---
 
@@ -375,25 +291,17 @@ The current multimodal Cookbook area covers text, images, audio and video-relate
 
 **Topics**
 
-* Text-to-image generation
-* Image prompting
-* Composition
-* Aspect ratio
-* Text rendering
-* Visual consistency
-* Image editing
-* Masking
-* Input fidelity
-* Iterative refinement
-* Image evaluation
-
-**Study resources**
-
-1. [Image generation guide](https://developers.openai.com/api/docs/guides/image-generation)
-2. [Images API reference](https://developers.openai.com/api/reference/images/)
-3. [Cookbook Multimodal collection](https://developers.openai.com/cookbook/topic/multimodal)
-4. [Cookbook: Generate images with GPT Image](https://developers.openai.com/cookbook/examples/generate_images_with_gpt_image)
-5. [Cookbook: Image generation prompting guide](https://developers.openai.com/cookbook/examples/multimodal/image_generation_prompting_guide)
+* [Text-to-image generation](https://developers.openai.com/api/docs/guides/image-generation)
+* [Image prompting](https://developers.openai.com/api/docs/guides/tools-image-generation)
+* [Composition](https://developers.openai.com/api/docs/models/gpt-image-2)
+* [Aspect ratio](https://developers.openai.com/api/docs/guides/image-generation#size-and-quality-options)
+* [Text rendering](https://developers.openai.com/api/docs/guides/image-generation#limitations)
+* [Visual consistency](https://developers.openai.com/api/docs/guides/image-generation#multi-turn-image-generation)
+* [Image editing](https://developers.openai.com/api/docs/guides/image-generation#image-api)
+* [Masking](https://developers.openai.com/api/docs/guides/image-generation#edit-images)
+* [Input fidelity](https://developers.openai.com/api/docs/guides/image-generation#input-fidelity)
+* [Iterative refinement](https://developers.openai.com/cookbook/examples/generate_images_with_gpt_image)
+* [Image evaluation](https://developers.openai.com/api/docs/guides/image-generation#image-generation-evals)
 
 **Practice**
 
@@ -412,23 +320,15 @@ Build a marketing-asset generator that accepts:
 
 **Topics**
 
-* Speech-to-text
-* Audio transcription
-* Text-to-speech
-* Audio input
-* Audio output
-* Streaming
-* Noise handling
-* Speaker considerations
-* Transcription evaluation
-
-**Study resources**
-
-1. [Speech-to-text guide](https://developers.openai.com/api/docs/guides/speech-to-text)
-2. [Text-to-speech guide](https://developers.openai.com/api/docs/guides/text-to-speech)
-3. [Audio API reference](https://developers.openai.com/api/reference/audio/)
-4. [Cookbook Multimodal collection](https://developers.openai.com/cookbook/topic/multimodal)
-5. [Cookbook: Comparing speech-to-text methods](https://developers.openai.com/cookbook/examples/comparing_speech_to_text_methods)
+* [Speech-to-text](https://developers.openai.com/api/docs/guides/audio)
+* [Audio transcription](https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create)
+* [Text-to-speech](https://developers.openai.com/api/docs/guides/text-to-speech)
+* [Audio input](https://developers.openai.com/api/docs/guides/realtime-conversations#audio-inputs-and-outputs)
+* [Audio output](https://developers.openai.com/api/docs/guides/text-to-speech#supported-output-formats)
+* [Streaming](https://developers.openai.com/api/docs/guides/speech-to-text#streaming-transcriptions)
+* [Noise handling](https://developers.openai.com/api/docs/guides/realtime-transcription#handling-silence-and-background-noise)
+* [Speaker considerations](https://developers.openai.com/api/docs/guides/speech-to-text#speaker-diarization)
+* [Transcription evaluation](https://developers.openai.com/api/docs/guides/transcription#evaluate-transcription-quality)
 
 **Practice**
 
@@ -440,27 +340,17 @@ Create a meeting assistant that transcribes audio, extracts decisions and produc
 
 **Topics**
 
-* Realtime sessions
-* WebRTC
-* WebSocket
-* Audio buffers
-* Voice activity detection
-* Turn detection
-* Interruptions
-* Realtime tools
-* Context management
-* Voice-agent latency
-* Voice-agent evaluation
-
-**Study resources**
-
-1. [Realtime API guide](https://developers.openai.com/api/docs/guides/realtime)
-2. [Realtime conversations](https://developers.openai.com/api/docs/guides/realtime-conversations)
-3. [Realtime WebRTC guide](https://developers.openai.com/api/docs/guides/realtime-webrtc)
-4. [Realtime WebSocket guide](https://developers.openai.com/api/docs/guides/realtime-websocket)
-5. [Realtime API reference](https://developers.openai.com/api/reference/realtime/)
-6. [Cookbook: Realtime Prompting Guide](https://developers.openai.com/cookbook/examples/realtime_prompting_guide)
-7. [Cookbook: Realtime Eval Guide](https://developers.openai.com/cookbook/examples/realtime_eval_guide)
+* [Realtime sessions](https://developers.openai.com/api/docs/guides/realtime#realtime-sessions)
+* [WebRTC](https://developers.openai.com/api/docs/guides/realtime-webrtc)
+* [WebSocket](https://developers.openai.com/api/docs/guides/realtime-websocket)
+* [Audio buffers](https://developers.openai.com/api/docs/guides/realtime-conversations)
+* [Voice activity detection](https://developers.openai.com/api/docs/guides/realtime-vad)
+* [Turn detection](https://developers.openai.com/api/docs/guides/realtime-vad#turn-detection)
+* [Interruptions](https://openai.github.io/openai-agents-python/realtime/guide)
+* [Realtime tools](https://developers.openai.com/api/docs/guides/realtime-mcp)
+* [Context management](https://developers.openai.com/api/docs/guides/realtime-conversations#managing-conversations)
+* [Voice-agent latency](https://developers.openai.com/api/docs/guides/latency-optimization#seven-principles)
+* [Voice-agent evaluation](https://developers.openai.com/cookbook/examples/realtime_eval_guide)
 
 **Practice**
 
@@ -478,20 +368,14 @@ Build a bilingual English–Japanese voice assistant that:
 
 **Topics**
 
-* Storyboarding
-* Scene prompts
-* Camera directions
-* Motion description
-* Temporal consistency
-* Reference assets
-* Generation lifecycle
-* Video evaluation
-
-**Study resources**
-
-1. [Video generation guide](https://developers.openai.com/api/docs/guides/video-generation)
-2. [Videos API reference](https://developers.openai.com/api/reference/videos/)
-3. [Cookbook Multimodal collection](https://developers.openai.com/cookbook/topic/multimodal)
+* [Storyboarding](https://www.studiobinder.com/blog/types-of-camera-shots-sizes-in-film)
+* [Scene prompts](https://developers.openai.com/api/docs/guides/video-generation)
+* [Camera directions](https://developers.openai.com/api/docs/guides/video-generation#effective-prompting)
+* [Motion description](https://developers.openai.com/api/docs/guides/video-generation#generate-a-video)
+* [Temporal consistency](https://developers.openai.com/api/docs/guides/video-generation#use-characters-for-consistency)
+* [Reference assets](https://developers.openai.com/api/reference/resources/videos)
+* [Generation lifecycle](https://developers.openai.com/api/docs/models/sora-2)
+* [Video evaluation](https://github.com/Netflix/vmaf)
 
 **Practice**
 
@@ -505,31 +389,23 @@ Generate a short technical product explainer from a storyboard and evaluate visu
 
 **Topics**
 
-* Agent versus workflow
-* Instructions
-* Tools
-* State
-* Memory
-* Planning
-* Execution loops
-* Stop conditions
-* Human approval
-* Tracing
-* Handoffs
-
-**Study resources**
-
-1. [Agents guide](https://developers.openai.com/api/docs/guides/agents)
-2. [Agents Cookbook collection](https://developers.openai.com/cookbook/topic/agents)
-3. [Agents SDK documentation](https://openai.github.io/openai-agents-python/)
-4. [Agents SDK quickstart](https://openai.github.io/openai-agents-python/quickstart/)
-5. [Practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
+* [Agent versus workflow](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals#workflow-boundaries-matter)
+* [Instructions](https://developers.openai.com/api/docs/guides/agents/define-agents#shape-instructions-handoffs-and-outputs)
+* [Tools](https://openai.github.io/openai-agents-python/tools)
+* [State](https://developers.openai.com/api/docs/guides/agents/results)
+* [Memory](https://developers.openai.com/api/docs/guides/agents/sandboxes#persist-memory-across-runs)
+* [Planning](https://developers.openai.com/plugins/build/examples#planning-for-the-context-window)
+* [Execution loops](https://developers.openai.com/api/docs/guides/agents)
+* [Stop conditions](https://openai.github.io/openai-agents-python/running_agents/#exceptions)
+* [Human approval](https://openai.github.io/openai-agents-python/human_in_the_loop)
+* [Tracing](https://openai.github.io/openai-agents-python/tracing)
+* [Handoffs](https://openai.github.io/openai-agents-python/handoffs)
 
 **Practice**
 
 Convert an existing deterministic workflow into a bounded agent and compare both approaches.
 
-OpenAI’s guidance distinguishes a Responses API application—where one model call plus tools and application logic may be sufficient—from systems that need SDK-managed orchestration. ([OpenAI Developers][7])
+OpenAI’s guidance distinguishes a Responses API application—where one model call plus tools and application logic may be sufficient—from systems that need SDK-managed orchestration.
 
 ---
 
@@ -537,26 +413,16 @@ OpenAI’s guidance distinguishes a Responses API application—where one model 
 
 **Topics**
 
-* Agent definitions
-* Agent instructions
-* Agent runner
-* Results
-* Output types
-* Sessions
-* Tools
-* Model configuration
-* Error handling
-* Tracing
-
-**Study resources**
-
-1. [Agents SDK overview](https://openai.github.io/openai-agents-python/)
-2. [Agents SDK quickstart](https://openai.github.io/openai-agents-python/quickstart/)
-3. [Defining agents](https://openai.github.io/openai-agents-python/agents/)
-4. [Running agents](https://openai.github.io/openai-agents-python/running_agents/)
-5. [Agent tools](https://openai.github.io/openai-agents-python/tools/)
-6. [Agent results](https://openai.github.io/openai-agents-python/results/)
-7. [Agent tracing](https://openai.github.io/openai-agents-python/tracing/)
+* [Agent definitions](https://developers.openai.com/api/docs/guides/agents/define-agents)
+* [Agent instructions](https://openai.github.io/openai-agents-python/agents)
+* [Agent runner](https://developers.openai.com/api/docs/guides/agents/running-agents)
+* [Results](https://openai.github.io/openai-agents-python/results)
+* [Output types](https://openai.github.io/openai-agents-python/agents/#output-types)
+* [Sessions](https://openai.github.io/openai-agents-python/sessions)
+* [Tools](https://openai.github.io/openai-agents-python/tools#common-tools)
+* [Model configuration](https://openai.github.io/openai-agents-python/config)
+* [Error handling](https://openai.github.io/openai-agents-python/tools/#handling-errors-in-function-tools)
+* [Tracing](https://developers.openai.com/api/docs/guides/agents/integrations-observability#tracing)
 
 **Practice**
 
@@ -574,24 +440,16 @@ Build a single research agent with:
 
 **Topics**
 
-* Manager pattern
-* Specialist agents
-* Handoffs
-* Agent-as-tool
-* Sequential execution
-* Parallel execution
-* Routing
-* Context isolation
-* Shared state
-* Result synthesis
-
-**Study resources**
-
-1. [Multi-agent orchestration](https://openai.github.io/openai-agents-python/multi_agent/)
-2. [Handoffs](https://openai.github.io/openai-agents-python/handoffs/)
-3. [Agents as tools](https://openai.github.io/openai-agents-python/tools/)
-4. [Cookbook: Structured Outputs for Multi-Agent Systems](https://developers.openai.com/cookbook/examples/structured_outputs_multi_agent)
-5. [Agents Cookbook collection](https://developers.openai.com/cookbook/topic/agents)
+* [Manager pattern](https://developers.openai.com/api/docs/guides/agents/orchestration)
+* [Specialist agents](https://developers.openai.com/api/docs/guides/agents/orchestration#add-specialists-only-when-the-contract-changes)
+* [Handoffs](https://developers.openai.com/api/docs/guides/agents/orchestration#use-handoffs-for-delegated-ownership)
+* [Agent-as-tool](https://developers.openai.com/api/docs/guides/agents/orchestration#use-agents-as-tools-for-manager-style-workflows)
+* [Sequential execution](https://openai.github.io/openai-agents-python/examples/#deterministic-flows)
+* [Parallel execution](https://openai.github.io/openai-agents-python/examples/#parallelization)
+* [Routing](https://openai.github.io/openai-agents-python/examples)
+* [Context isolation](https://openai.github.io/openai-agents-python/context)
+* [Shared state](https://openai.github.io/openai-agents-python/context/#local-context)
+* [Result synthesis](https://openai.github.io/openai-agents-python/results/#final-output)
 
 **Practice architecture**
 
@@ -612,26 +470,18 @@ Start with a single agent and split it only when evaluations show that specializ
 
 **Topics**
 
-* Session state
-* Short-term memory
-* Persistent memory
-* Context compaction
-* Summarization
-* Checkpoints
-* Resumability
-* Execution budgets
-* Maximum iterations
-* Loop detection
-* Cancellation
-* Recovery
-
-**Study resources**
-
-1. [Agent sessions](https://openai.github.io/openai-agents-python/sessions/)
-2. [Running agents](https://openai.github.io/openai-agents-python/running_agents/)
-3. [Conversation state](https://developers.openai.com/api/docs/guides/conversation-state)
-4. [Background mode](https://developers.openai.com/api/docs/guides/background)
-5. [Agents Cookbook collection](https://developers.openai.com/cookbook/topic/agents)
+* [Session state](https://openai.github.io/openai-agents-python/ref/run_state)
+* [Short-term memory](https://openai.github.io/openai-agents-python/sessions/#core-session-behavior)
+* [Persistent memory](https://openai.github.io/openai-agents-python/sessions/#memory-persistence)
+* [Context compaction](https://developers.openai.com/api/docs/guides/compaction)
+* [Summarization](https://developers.openai.com/api/docs/guides/compaction#client-side-compaction)
+* [Checkpoints](https://developers.openai.com/api/docs/guides/supervised-fine-tuning#use-checkpoints-if-needed)
+* [Resumability](https://openai.github.io/openai-agents-python/human_in_the_loop/#long-running-approvals)
+* [Execution budgets](https://openai.github.io/openai-agents-python/usage)
+* [Maximum iterations](https://openai.github.io/openai-agents-python/running_agents/#max-turns)
+* [Loop detection](https://openai.github.io/openai-agents-python/tools/#tool-use-behavior)
+* [Cancellation](https://openai.github.io/openai-agents-python/results/#streaming-lifecycle-and-diagnostics)
+* [Recovery](https://openai.github.io/openai-agents-python/running_agents/#errors-and-recovery)
 
 **Practice**
 
@@ -650,23 +500,15 @@ Build a resumable research agent with:
 
 **Topics**
 
-* MCP clients and servers
-* MCP tools
-* MCP resources
-* Tool discovery
-* Authentication
-* Local versus remote MCP
-* Approval controls
-* Trust boundaries
-* Auditing
-
-**Study resources**
-
-1. [MCP guide](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
-2. [Agents SDK MCP documentation](https://openai.github.io/openai-agents-python/mcp/)
-3. [Using tools](https://developers.openai.com/api/docs/guides/tools)
-4. [Agents Cookbook collection](https://developers.openai.com/cookbook/topic/agents)
-5. [Deep Research API introduction](https://developers.openai.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api)
+* [MCP clients and servers](https://modelcontextprotocol.io/docs/learn/architecture)
+* [MCP tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)
+* [MCP resources](https://modelcontextprotocol.io/specification/2025-06-18/server/resources)
+* [Tool discovery](https://openai.github.io/openai-agents-python/mcp)
+* [Authentication](https://developers.openai.com/api/docs/guides/tools-connectors-mcp#authentication)
+* [Local versus remote MCP](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
+* [Approval controls](https://developers.openai.com/api/docs/guides/tools-connectors-mcp#approvals)
+* [Trust boundaries](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels#logging-boundaries)
+* [Auditing](https://developers.openai.com/codex/enterprise/compliance-api)
 
 **Practice**
 
@@ -678,24 +520,16 @@ Expose a read-only internal architecture repository through an MCP server and co
 
 **Topics**
 
-* Computer interaction loops
-* Screenshots
-* Browser actions
-* Action verification
-* Sandboxed code execution
-* Filesystem boundaries
-* Network restrictions
-* Credential protection
-* Human approval
-* Coding agents
-
-**Study resources**
-
-1. [Computer use guide](https://developers.openai.com/api/docs/guides/tools-computer-use)
-2. [Code Interpreter guide](https://developers.openai.com/api/docs/guides/tools-code-interpreter)
-3. [Shell tool guide](https://developers.openai.com/api/docs/guides/tools-shell)
-4. [Agents Cookbook collection](https://developers.openai.com/cookbook/topic/agents)
-5. [Codex Cookbook collection](https://developers.openai.com/cookbook/topic/codex)
+* [Computer interaction loops](https://developers.openai.com/api/docs/guides/tools-computer-use#option-1-run-the-built-in-computer-use-loop)
+* [Screenshots](https://developers.openai.com/api/docs/guides/tools-computer-use)
+* [Browser actions](https://developers.openai.com/api/docs/guides/tools-computer-use#3-run-every-returned-action)
+* [Action verification](https://developers.openai.com/api/docs/guides/tools-computer-use#4-acknowledge-safety-checks)
+* [Sandboxed code execution](https://developers.openai.com/api/docs/guides/agents/sandboxes)
+* [Filesystem boundaries](https://developers.openai.com/codex/sandboxing#filesystem-access)
+* [Network restrictions](https://developers.openai.com/api/docs/guides/tools-shell#network-access)
+* [Credential protection](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)
+* [Human approval](https://developers.openai.com/api/docs/guides/tools-computer-use#human-in-the-loop)
+* [Coding agents](https://developers.openai.com/codex/guides/build-ai-native-engineering-team)
 
 **Practice**
 
@@ -716,22 +550,14 @@ Build a sandbox coding agent that can:
 
 **Topics**
 
-* Eval datasets
-* Representative cases
-* Edge cases
-* Adversarial cases
-* Regression tests
-* Dataset versioning
-* Human evaluation
-* Automated graders
-
-**Study resources**
-
-1. [Evals guide](https://developers.openai.com/api/docs/guides/evals)
-2. [Cookbook Evals collection](https://developers.openai.com/cookbook/topic/evals)
-3. [Cookbook: Getting Started with OpenAI Evals](https://developers.openai.com/cookbook/examples/evaluation/getting_started_with_openai_evals)
-4. [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
-5. [Evals API reference](https://developers.openai.com/api/reference/evals/)
+* [Eval datasets](https://developers.openai.com/api/docs/guides/evals)
+* [Representative cases](https://developers.openai.com/api/docs/guides/evaluation-best-practices#handle-edge-cases)
+* [Edge cases](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+* [Adversarial cases](https://developers.openai.com/api/docs/guides/red-teaming)
+* [Regression tests](https://developers.openai.com/api/docs/guides/evals#uploading-test-data)
+* [Dataset versioning](https://developers.openai.com/api/docs/guides/evaluation-getting-started)
+* [Human evaluation](https://huggingface.co/docs/evaluate/main/a_quick_tour)
+* [Automated graders](https://developers.openai.com/api/docs/guides/evaluation-getting-started#add-graders)
 
 **Practice**
 
@@ -746,7 +572,7 @@ Create an initial dataset containing:
 | Tool-failure cases |    10 |
 | Safety cases       |     5 |
 
-OpenAI defines evals as tests used to determine whether model outputs meet specified content and style criteria. ([OpenAI Developers][8])
+OpenAI defines evals as tests used to determine whether model outputs meet specified content and style criteria.
 
 ---
 
@@ -754,22 +580,14 @@ OpenAI defines evals as tests used to determine whether model outputs meet speci
 
 **Topics**
 
-* Exact-match grading
-* Schema validation
-* Regex grading
-* Semantic similarity
-* Model-based grading
-* Pairwise comparison
-* Human grading
-* Multi-grader aggregation
-
-**Study resources**
-
-1. [Graders guide](https://developers.openai.com/api/docs/guides/graders)
-2. [Evals guide](https://developers.openai.com/api/docs/guides/evals)
-3. [Cookbook Evals collection](https://developers.openai.com/cookbook/topic/evals)
-4. [Structured Outputs Evaluation](https://developers.openai.com/cookbook/examples/evaluation/use-cases/structured-outputs-evaluation)
-5. [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+* [Exact-match grading](https://docs.python.org/3/howto/regex.html)
+* [Schema validation](https://python-jsonschema.readthedocs.io/en/stable/validate)
+* [Regex grading](https://developers.openai.com/api/docs/guides/graders#python-graders)
+* [Semantic similarity](https://developers.openai.com/api/docs/guides/graders#text-similarity-graders)
+* [Model-based grading](https://developers.openai.com/api/docs/guides/graders#model-graders)
+* [Pairwise comparison](https://developers.openai.com/cookbook/examples/evaluation/how_to_eval_abstractive_summarization)
+* [Human grading](https://developers.openai.com/api/docs/guides/evaluation-best-practices#human-evals)
+* [Multi-grader aggregation](https://scikit-learn.org/stable/modules/calibration.html)
 
 **Practice**
 
@@ -788,24 +606,16 @@ Build separate graders for:
 
 **Topics**
 
-* Tool-selection accuracy
-* Tool-argument accuracy
-* Agent trajectory
-* Handoff correctness
-* Retrieval recall
-* Citation correctness
-* Image understanding
-* Voice-agent quality
-* Latency and cost
-* Failure recovery
-
-**Study resources**
-
-1. [Cookbook Evals collection](https://developers.openai.com/cookbook/topic/evals)
-2. [Agent evaluation](https://openai.github.io/openai-agents-python/agent_replay/)
-3. [Tracing](https://openai.github.io/openai-agents-python/tracing/)
-4. [Cookbook: Realtime Eval Guide](https://developers.openai.com/cookbook/examples/realtime_eval_guide)
-5. [Cookbook: Structured Outputs Evaluation](https://developers.openai.com/cookbook/examples/evaluation/use-cases/structured-outputs-evaluation)
+* [Tool-selection accuracy](https://openai.github.io/openai-agents-python/ref/tracing)
+* [Tool-argument accuracy](https://developers.openai.com/api/docs/guides/agent-evals#evaluate-tool-calls)
+* [Agent trajectory](https://developers.openai.com/api/docs/guides/agent-evals)
+* [Handoff correctness](https://developers.openai.com/api/docs/guides/agent-evals#evaluate-handoffs)
+* [Retrieval recall](https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_recall)
+* [Citation correctness](https://developers.openai.com/api/docs/guides/citation-formatting#validate-citations)
+* [Image understanding](https://developers.openai.com/api/docs/guides/vision-fine-tuning)
+* [Voice-agent quality](https://developers.openai.com/cookbook/examples/realtime_eval_guide#evaluating-a-realtime-agent)
+* [Latency and cost](https://developers.openai.com/api/docs/guides/prompt-caching)
+* [Failure recovery](https://developers.openai.com/api/docs/guides/agent-evals#evaluate-failure-recovery)
 
 **Practice dashboard**
 
@@ -829,27 +639,18 @@ Track:
 
 **Topics**
 
-* Moderation
-* Prompt injection
-* Indirect prompt injection
-* Jailbreaks
-* PII protection
-* Secret leakage
-* Tool allowlists
-* Output validation
-* Data exfiltration
-* Human approval
-* Audit logs
-* Least privilege
-
-**Study resources**
-
-1. [Cookbook Guardrails collection](https://developers.openai.com/cookbook/topic/guardrails)
-2. [Safety best practices](https://developers.openai.com/api/docs/guides/safety-best-practices)
-3. [Moderation guide](https://developers.openai.com/api/docs/guides/moderation)
-4. [Agents SDK guardrails](https://openai.github.io/openai-agents-python/guardrails/)
-5. [Safety checks](https://developers.openai.com/api/docs/guides/safety-checks)
-6. [Building Governed AI Agents](https://developers.openai.com/cookbook/examples/partners/agentic_governance_guide/agentic_governance_cookbook)
+* [Moderation](https://developers.openai.com/api/docs/guides/moderation)
+* [Prompt injection](https://developers.openai.com/api/docs/guides/tools-connectors-mcp#prompt-injection)
+* [Indirect prompt injection](https://developers.openai.com/api/docs/guides/agent-builder-safety#prompt-injections)
+* [Jailbreaks](https://genai.owasp.org/llmrisk/llm01-prompt-injection)
+* [PII protection](https://www.nist.gov/privacy-framework)
+* [Secret leakage](https://developers.openai.com/api/docs/guides/agent-builder-safety#private-data-leakage)
+* [Tool allowlists](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels#advanced-allowlisted-http-callouts)
+* [Output validation](https://developers.openai.com/api/docs/guides/agent-builder-safety#use-structured-outputs-to-constrain-data-flow)
+* [Data exfiltration](https://developers.openai.com/api/docs/guides/deep-research#prompt-injection-and-exfiltration)
+* [Human approval](https://developers.openai.com/api/docs/guides/agent-builder-safety#keep-tool-approvals-on)
+* [Audit logs](https://developers.openai.com/api/docs/guides/admin-apis#retrieve-audit-logs)
+* [Least privilege](https://developers.openai.com/api/docs/guides/rbac)
 
 **Guardrail architecture**
 
@@ -875,7 +676,7 @@ Data-loss prevention
 Audit logging
 ```
 
-Guardrails are controls intended to keep agents operating safely, consistently and within defined boundaries. ([OpenAI Developers][9])
+Guardrails are controls intended to keep agents operating safely, consistently and within defined boundaries.
 
 ---
 
@@ -885,28 +686,18 @@ Guardrails are controls intended to keep agents operating safely, consistently a
 
 **Topics**
 
-* Prompt caching
-* Streaming
-* Batch processing
-* Parallel requests
-* Rate limits
-* Exponential backoff
-* Concurrency
-* Model routing
-* Context pruning
-* Token budgets
-* Load testing
-* Cost attribution
-
-**Study resources**
-
-1. [Cookbook Optimization collection](https://developers.openai.com/cookbook/topic/optimization)
-2. [Latency optimization](https://developers.openai.com/api/docs/guides/latency-optimization)
-3. [Prompt caching](https://developers.openai.com/api/docs/guides/prompt-caching)
-4. [Batch API](https://developers.openai.com/api/docs/guides/batch)
-5. [Rate limits](https://developers.openai.com/api/docs/guides/rate-limits)
-6. [Cookbook: How to handle rate limits](https://developers.openai.com/cookbook/examples/how_to_handle_rate_limits)
-7. [Cookbook: Model Selection Guide](https://developers.openai.com/cookbook/examples/partners/model_selection_guide/model_selection_guide)
+* [Prompt caching](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p6-sol#prompt-caching)
+* [Streaming](https://developers.openai.com/api/docs/guides/structured-outputs#streaming)
+* [Batch processing](https://developers.openai.com/api/docs/guides/latency-optimization#process-tokens-faster)
+* [Parallel requests](https://developers.openai.com/cookbook/examples/how_to_handle_rate_limits)
+* [Rate limits](https://developers.openai.com/api/docs/guides/rate-limits)
+* [Exponential backoff](https://developers.openai.com/api/docs/guides/rate-limits#retrying-with-exponential-backoff)
+* [Concurrency](https://developers.openai.com/api/docs/guides/cost-optimization#cost-and-latency)
+* [Model routing](https://developers.openai.com/api/docs/guides/latency-optimization#dont-default-to-an-llm)
+* [Context pruning](https://developers.openai.com/api/docs/guides/compaction#when-to-compact)
+* [Token budgets](https://developers.openai.com/api/docs/guides/spend-limits)
+* [Load testing](https://grafana.com/docs/k6/latest/testing-guides/load-testing-websites)
+* [Cost attribution](https://developers.openai.com/api/docs/guides/cost-optimization)
 
 **Practice**
 
@@ -927,26 +718,16 @@ Retry rate
 
 **Topics**
 
-* When to fine-tune
-* Dataset creation
-* Training and validation splits
-* Supervised fine-tuning
-* Vision fine-tuning
-* Preference optimization
-* Reinforcement fine-tuning
-* Distillation
-* Overfitting
-* Post-training evaluation
-
-**Study resources**
-
-1. [Model optimization overview](https://developers.openai.com/api/docs/guides/model-optimization)
-2. [Supervised fine-tuning](https://developers.openai.com/api/docs/guides/supervised-fine-tuning)
-3. [Vision fine-tuning](https://developers.openai.com/api/docs/guides/vision-fine-tuning)
-4. [Direct Preference Optimization](https://developers.openai.com/api/docs/guides/direct-preference-optimization)
-5. [Reinforcement fine-tuning](https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning)
-6. [Fine-tuning API reference](https://developers.openai.com/api/reference/fine-tuning/)
-7. [Cookbook: Vision Fine-tuning for Visual Question Answering](https://developers.openai.com/cookbook/examples/multimodal/vision_fine_tuning_on_gpt4o_for_visual_question_answering)
+* [When to fine-tune](https://developers.openai.com/api/docs/guides/model-optimization#fine-tune-a-model)
+* [Dataset creation](https://developers.openai.com/api/docs/guides/supervised-fine-tuning#build-your-dataset)
+* [Training and validation splits](https://developers.openai.com/api/docs/guides/fine-tuning-best-practices)
+* [Supervised fine-tuning](https://developers.openai.com/api/docs/guides/supervised-fine-tuning)
+* [Vision fine-tuning](https://developers.openai.com/api/docs/guides/vision-fine-tuning#control-image-quality)
+* [Preference optimization](https://developers.openai.com/api/docs/guides/direct-preference-optimization)
+* [Reinforcement fine-tuning](https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning)
+* [Distillation](https://developers.openai.com/api/reference/resources/fine_tuning)
+* [Overfitting](https://developers.openai.com/api/docs/guides/model-optimization#fine-tuning-methods)
+* [Post-training evaluation](https://developers.openai.com/api/docs/guides/supervised-fine-tuning#compare-to-evals)
 
 **Recommended decision order**
 
@@ -964,7 +745,7 @@ Evaluate again
 Fine-tune only when justified
 ```
 
-Vision fine-tuning can specialize a model for image-based tasks, but it should be backed by a baseline evaluation and representative training data. ([OpenAI Developers][10])
+Vision fine-tuning can specialize a model for image-based tasks, but it should be backed by a baseline evaluation and representative training data.
 
 ---
 
@@ -974,25 +755,16 @@ Vision fine-tuning can specialize a model for image-based tasks, but it should b
 
 **Topics**
 
-* Repository instructions
-* Coding-agent prompts
-* Planning
-* Goal definition
-* Test-driven changes
-* Iterative repair
-* Code review
-* Legacy migration
-* CI integration
-* Sandboxed execution
-
-**Study resources**
-
-1. [Codex documentation](https://developers.openai.com/codex)
-2. [Codex Cookbook collection](https://developers.openai.com/cookbook/topic/codex)
-3. [Codex CLI](https://developers.openai.com/codex/cli)
-4. [Codex IDE integration](https://developers.openai.com/codex/ide)
-5. [Codex GitHub integration](https://developers.openai.com/codex/integrations/github)
-6. [Agents SDK](https://openai.github.io/openai-agents-python/)
+* [Repository instructions](https://developers.openai.com/codex/guides/agents-md)
+* [Coding-agent prompts](https://developers.openai.com/api/docs/guides/latest-model/gpt-5.4#keep-tool-boundaries-explicit-in-coding-and-terminal-agents)
+* [Planning](https://developers.openai.com/api/docs/guides/latest-model/gpt-5#maximizing-coding-performance-from-planning-to-execution)
+* [Goal definition](https://developers.openai.com/codex/prompting#write-a-clear-task)
+* [Test-driven changes](https://docs.pytest.org/en/stable/how-to/assert.html)
+* [Iterative repair](https://developers.openai.com/codex/prompting#iterate-on-the-result)
+* [Code review](https://developers.openai.com/codex/code-review)
+* [Legacy migration](https://martinfowler.com/articles/patterns-legacy-displacement)
+* [CI integration](https://developers.openai.com/codex/noninteractive)
+* [Sandboxed execution](https://developers.openai.com/codex/sandboxing)
 
 **Practice**
 
@@ -1006,7 +778,7 @@ Use Codex on a noncritical repository to:
 6. Explain assumptions
 7. Produce a reviewable change
 
-The Codex Cookbook is the live collection for coding-agent automation and development workflows. ([OpenAI Developers][11])
+The Codex Cookbook is the live collection for coding-agent automation and development workflows.
 
 ---
 
@@ -1014,25 +786,15 @@ The Codex Cookbook is the live collection for coding-agent automation and develo
 
 **Topics**
 
-* Apps SDK architecture
-* MCP server integration
-* Tool definitions
-* UI components
-* Authentication
-* ChatGPT components
-* Application state
-* Deployment
-* Security and review
-
-**Study resources**
-
-1. [Apps SDK documentation](https://developers.openai.com/apps-sdk)
-2. [Apps SDK quickstart](https://developers.openai.com/apps-sdk/quickstart)
-3. [Build an MCP server](https://developers.openai.com/apps-sdk/build/mcp-server)
-4. [Build a ChatGPT UI](https://developers.openai.com/apps-sdk/build/chatgpt-ui)
-5. [Authentication](https://developers.openai.com/apps-sdk/build/auth)
-6. [Apps SDK examples](https://developers.openai.com/apps-sdk/resources/examples)
-7. [ChatGPT Cookbook collection](https://developers.openai.com/cookbook/topic/chatgpt)
+* [Apps SDK architecture](https://developers.openai.com/apps-sdk)
+* [MCP server integration](https://developers.openai.com/apps-sdk/build/mcp-server)
+* [Tool definitions](https://developers.openai.com/apps-sdk/build/mcp-server#define-tools)
+* [UI components](https://developers.openai.com/apps-sdk/build/chatgpt-ui)
+* [Authentication](https://developers.openai.com/apps-sdk/build/auth)
+* [ChatGPT components](https://developers.openai.com/apps-sdk/build/chatgpt-ui#use-components)
+* [Application state](https://developers.openai.com/apps-sdk/build/state-management)
+* [Deployment](https://developers.openai.com/apps-sdk/deploy)
+* [Security and review](https://developers.openai.com/apps-sdk/deploy#security-reminders)
 
 **Practice**
 
@@ -1044,23 +806,16 @@ Build a ChatGPT app that searches your architecture standards and displays struc
 
 **Topics**
 
-* Open-weight models
-* Local inference
-* Hardware requirements
-* Quantization
-* Model serving
-* Prompt formats
-* Tool use
-* Fine-tuning
-* Safety models
-* Hosted/local model routing
-
-**Study resources**
-
-1. [gpt-oss Cookbook collection](https://developers.openai.com/cookbook/topic/gpt-oss)
-2. [gpt-oss model documentation](https://developers.openai.com/api/docs/models/gpt-oss-120b)
-3. [Cookbook: Fine-tuning gpt-oss with Hugging Face](https://developers.openai.com/cookbook/articles/gpt-oss/fine-tune-transfomers)
-4. [OpenAI Cookbook GitHub repository](https://github.com/openai/openai-cookbook)
+* [Open-weight models](https://developers.openai.com/api/docs/models/gpt-oss-120b)
+* [Local inference](https://huggingface.co/docs/transformers/main/model_doc/gpt_oss)
+* [Hardware requirements](https://huggingface.co/openai/gpt-oss-120b#hardware-requirements)
+* [Quantization](https://huggingface.co/docs/transformers/quantization/overview)
+* [Model serving](https://docs.vllm.ai/en/latest/serving/openai_compatible_server)
+* [Prompt formats](https://huggingface.co/docs/transformers/main/model_doc/gpt_oss#usage-tips)
+* [Tool use](https://developers.openai.com/api/docs/guides/latest-model/gpt-5.4#make-tool-use-persistent-when-correctness-depends-on-it)
+* [Fine-tuning](https://developers.openai.com/cookbook/articles/gpt-oss/fine-tune-transfomers)
+* [Safety models](https://huggingface.co/openai/gpt-oss-safeguard-120b)
+* [Hosted/local model routing](https://developers.openai.com/api/docs/guides/agents/models#choose-models-per-agent)
 
 **Practice**
 
@@ -1086,7 +841,7 @@ Compare:
 * Local operating cost
 * Operational complexity
 
-The gpt-oss Cookbook covers OpenAI’s open-weight model ecosystem, including local deployment and customization examples. ([OpenAI Developers][12])
+The gpt-oss Cookbook covers OpenAI’s open-weight model ecosystem, including local deployment and customization examples.
 
 ---
 
@@ -1094,30 +849,30 @@ The gpt-oss Cookbook covers OpenAI’s open-weight model ecosystem, including lo
 
 | Week | Chapter              | Main resource                                                                                                                 | Deliverable                  |
 | ---: | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-|    1 | API fundamentals     | [API documentation](https://developers.openai.com/api/docs)                                                                   | Streaming CLI assistant      |
-|    2 | Model selection      | [Model selection guide](https://developers.openai.com/cookbook/examples/partners/model_selection_guide/model_selection_guide) | Model comparison harness     |
-|    3 | Prompt engineering   | [Prompt engineering](https://developers.openai.com/api/docs/guides/prompt-engineering)                                        | Prompt experiment report     |
-|    4 | Structured Outputs   | [Structured Outputs introduction](https://developers.openai.com/cookbook/examples/structured_outputs_intro)                   | Document extractor           |
-|    5 | Text patterns        | [Text Cookbook](https://developers.openai.com/cookbook/topic/text)                                                            | Text-processing pipeline     |
-|    6 | Function calling     | [Function calling](https://developers.openai.com/api/docs/guides/function-calling)                                            | Tool-enabled assistant       |
-|    7 | Built-in tools       | [Using tools](https://developers.openai.com/api/docs/guides/tools)                                                            | Cited research assistant     |
-|    8 | Embeddings           | [Embeddings](https://developers.openai.com/api/docs/guides/embeddings)                                                        | Semantic search              |
-|    9 | RAG                  | [Retrieval](https://developers.openai.com/api/docs/guides/retrieval)                                                          | PDF knowledge assistant      |
-|   10 | Vision               | [Multimodal Cookbook](https://developers.openai.com/cookbook/topic/multimodal)                                                | Document-vision analyzer     |
-|   11 | Image generation     | [Image generation](https://developers.openai.com/api/docs/guides/image-generation)                                            | Image-generation application |
-|   12 | Audio                | [Speech-to-text](https://developers.openai.com/api/docs/guides/speech-to-text)                                                | Meeting transcription app    |
-|   13 | Realtime             | [Realtime API](https://developers.openai.com/api/docs/guides/realtime)                                                        | Bilingual voice assistant    |
-|   14 | Agent fundamentals   | [Agents guide](https://developers.openai.com/api/docs/guides/agents)                                                          | Single research agent        |
-|   15 | Agents SDK           | [Agents SDK quickstart](https://openai.github.io/openai-agents-python/quickstart/)                                            | Traced agent application     |
-|   16 | Multi-agent systems  | [Multi-agent orchestration](https://openai.github.io/openai-agents-python/multi_agent/)                                       | Specialist-agent workflow    |
-|   17 | MCP and computer use | [MCP guide](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)                                               | Read-only MCP integration    |
-|   18 | Eval fundamentals    | [Evals guide](https://developers.openai.com/api/docs/guides/evals)                                                            | 100-case eval dataset        |
-|   19 | System evals         | [Evals Cookbook](https://developers.openai.com/cookbook/topic/evals)                                                          | Quality dashboard            |
-|   20 | Guardrails           | [Guardrails Cookbook](https://developers.openai.com/cookbook/topic/guardrails)                                                | Threat model and controls    |
-|   21 | Optimization         | [Optimization Cookbook](https://developers.openai.com/cookbook/topic/optimization)                                            | Cost and latency report      |
-|   22 | Fine-tuning          | [Model optimization](https://developers.openai.com/api/docs/guides/model-optimization)                                        | Fine-tuning experiment       |
-|   23 | Codex                | [Codex Cookbook](https://developers.openai.com/cookbook/topic/codex)                                                          | Tested repository change     |
-|   24 | Apps SDK and gpt-oss | [Apps SDK](https://developers.openai.com/apps-sdk)                                                                            | Final integrated capstone    |
+|    1 | API fundamentals     | API documentation                                                                   | Streaming CLI assistant      |
+|    2 | Model selection      | Model selection guide | Model comparison harness     |
+|    3 | Prompt engineering   | Prompt engineering                                        | Prompt experiment report     |
+|    4 | Structured Outputs   | Structured Outputs introduction                   | Document extractor           |
+|    5 | Text patterns        | Text Cookbook                                                            | Text-processing pipeline     |
+|    6 | Function calling     | Function calling                                            | Tool-enabled assistant       |
+|    7 | Built-in tools       | Using tools                                                            | Cited research assistant     |
+|    8 | Embeddings           | Embeddings                                                        | Semantic search              |
+|    9 | RAG                  | Retrieval                                                          | PDF knowledge assistant      |
+|   10 | Vision               | Multimodal Cookbook                                                | Document-vision analyzer     |
+|   11 | Image generation     | Image generation                                            | Image-generation application |
+|   12 | Audio                | Speech-to-text                                                | Meeting transcription app    |
+|   13 | Realtime             | Realtime API                                                        | Bilingual voice assistant    |
+|   14 | Agent fundamentals   | Agents guide                                                          | Single research agent        |
+|   15 | Agents SDK           | Agents SDK quickstart                                            | Traced agent application     |
+|   16 | Multi-agent systems  | Multi-agent orchestration                                       | Specialist-agent workflow    |
+|   17 | MCP and computer use | MCP guide                                               | Read-only MCP integration    |
+|   18 | Eval fundamentals    | Evals guide                                                            | 100-case eval dataset        |
+|   19 | System evals         | Evals Cookbook                                                          | Quality dashboard            |
+|   20 | Guardrails           | Guardrails Cookbook                                                | Threat model and controls    |
+|   21 | Optimization         | Optimization Cookbook                                            | Cost and latency report      |
+|   22 | Fine-tuning          | Model optimization                                        | Fine-tuning experiment       |
+|   23 | Codex                | Codex Cookbook                                                          | Tested repository change     |
+|   24 | Apps SDK and gpt-oss | Apps SDK                                                                            | Final integrated capstone    |
 
 ## Capstone outcome
 
@@ -1136,18 +891,10 @@ By the end, build an **Enterprise AI Architecture Assistant** with:
 * Cost and latency monitoring
 * Optional local gpt-oss routing
 
-Use the [Cookbook archive](https://developers.openai.com/cookbook/archive) only for concepts not covered by current recipes; archived notebooks may use older APIs or models and may need migration to the Responses API. ([OpenAI Developers][13])
+Use the [Cookbook archive](https://developers.openai.com/cookbook/archive) only for concepts not covered by current recipes; archived notebooks may use older APIs or models and may need migration to the Responses API.
 
-[1]: https://developers.openai.com/cookbook?utm_source=chatgpt.com "Cookbook"
-[2]: https://developers.openai.com/api/docs/guides/reasoning?utm_source=chatgpt.com "Reasoning models | OpenAI API"
-[3]: https://developers.openai.com/api/docs/guides/structured-outputs?utm_source=chatgpt.com "Structured model outputs | OpenAI API"
-[4]: https://developers.openai.com/api/docs/guides/function-calling?utm_source=chatgpt.com "Function calling | OpenAI API"
-[5]: https://developers.openai.com/cookbook/examples/deep_research_api/introduction_to_deep_research_api?utm_source=chatgpt.com "Introduction to deep research in the OpenAI API"
-[6]: https://developers.openai.com/cookbook/topic/multimodal?utm_source=chatgpt.com "Multimodal • Cookbook"
-[7]: https://developers.openai.com/cookbook/topic/agents?utm_source=chatgpt.com "Agents • Cookbook"
-[8]: https://developers.openai.com/api/docs/guides/evals?utm_source=chatgpt.com "Working with evals | OpenAI API"
-[9]: https://developers.openai.com/cookbook/topic/guardrails?utm_source=chatgpt.com "Guardrails • Cookbook"
-[10]: https://developers.openai.com/cookbook/examples/multimodal/vision_fine_tuning_on_gpt4o_for_visual_question_answering?utm_source=chatgpt.com "Vision Fine-tuning on GPT-4o for Visual Question Answering"
-[11]: https://developers.openai.com/cookbook/topic/codex?utm_source=chatgpt.com "Codex • Cookbook"
-[12]: https://developers.openai.com/cookbook/topic/gpt-oss?utm_source=chatgpt.com "gpt-oss • Cookbook"
-[13]: https://developers.openai.com/cookbook/archive?utm_source=chatgpt.com "Cookbook Archive"
+## Link policy
+
+- Every study URL appears once; the sequence table uses resource names without repeating links.
+- Each chapter keeps its detailed topic checklist, adds topic-specific study links, and retains its original practice exercise and explanatory notes.
+- Prefer current maintained guides; archived recipes may require migration to the Responses API.
