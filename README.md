@@ -122,7 +122,7 @@ Create five versions of the same prompt and measure which version produces the h
 * **Nested objects**
   Define a strict machine-readable contract, handle invalid or refused outputs, and validate parsed data before downstream use. [Study: Objects have limitations on nesting depth and size](https://developers.openai.com/api/docs/guides/structured-outputs#objects-have-limitations-on-nesting-depth-and-size)
 * **Schema validation**
-  Define a strict machine-readable contract, handle invalid or refused outputs, and validate parsed data before downstream use. [Study: Schema validation in multi-agent data flows](https://developers.openai.com/cookbook/examples/structured_outputs_multi_agent)
+  Define a strict machine-readable contract, handle invalid or refused outputs, and validate parsed data before downstream use. [Study: Validate against supported Structured Output schemas](https://developers.openai.com/api/docs/guides/structured-outputs#supported-schemas)
 * **Refusal handling**
   Define a strict machine-readable contract, handle invalid or refused outputs, and validate parsed data before downstream use. [Study: Refusals with structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs#refusals-with-structured-outputs)
 * **Schema versioning**
@@ -145,19 +145,19 @@ Structured Outputs constrains model responses to a supplied JSON Schema, making 
 **Topics**
 
 * **Classification**
-  Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Classification, sentiment, and intent detection](https://developers.openai.com/cookbook/examples/multiclass_classification_for_transactions)
+  Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Train and evaluate a text classifier](https://huggingface.co/docs/transformers/tasks/sequence_classification)
 * **Summarization**
-  Preserve the source’s important facts and qualifications while controlling length, structure, and unsupported inference. [Study: Practical guide to summarization](https://developers.openai.com/cookbook/examples/summarizing_long_documents)
+  Preserve the source’s important facts and qualifications while controlling length, structure, and unsupported inference. [Study: Build and evaluate a summarization workflow](https://huggingface.co/docs/transformers/tasks/summarization)
 * **Translation**
   Preserve meaning, terminology, tone, and locale-specific conventions, then evaluate difficult multilingual examples. [Study: Translation quality and terminology evaluation](https://developers.deepl.com/docs/best-practices/working-with-context)
 * **Rewriting**
   Structure instructions and context so the model can identify the objective, constraints, examples, and completion criteria unambiguously. [Study: Message roles and instruction following](https://developers.openai.com/api/docs/guides/text#message-roles-and-instruction-following)
 * **Information extraction**
-  Identify the required evidence and fields, extract them consistently, and retain enough source context for verification. [Study: Information extraction and question answering](https://developers.openai.com/cookbook/examples/entity_extraction_for_long_documents)
+  Identify the required evidence and fields, extract them consistently, and retain enough source context for verification. [Study: Extract structured data from unstructured text](https://developers.openai.com/api/docs/guides/structured-outputs#structured-data-extraction)
 * **Question answering**
-  Answer from available evidence, attach citations to supported claims, and return an insufficient-evidence result when grounding is weak. [Study: Grounded question answering with embeddings](https://developers.openai.com/cookbook/examples/question_answering_using_embeddings)
+  Answer from available evidence, attach citations to supported claims, and return an insufficient-evidence result when grounding is weak. [Study: Build grounded web question answering with embeddings](https://developers.openai.com/api/docs/tutorials/web-qa-embeddings)
 * **Intent detection**
-  Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Zero shot classification](https://developers.openai.com/cookbook/examples/multiclass_classification_for_transactions#zero-shot-classification)
+  Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Classify unseen intents with zero-shot classification](https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.ZeroShotClassificationPipeline)
 * **Sentiment analysis**
   Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Sentiment analysis](https://developers.openai.com/api/docs/tutorials/meeting-minutes#sentiment-analysis)
 * **Code generation**
@@ -200,7 +200,7 @@ Validated JSON
 * **Tool-call arguments**
   Define the capability and its input contract, validate every invocation, and enforce permissions or approval before execution. [Study: Using tools](https://developers.openai.com/api/docs/guides/tools)
 * **Multiple tool calls**
-  Define the capability and its input contract, validate every invocation, and enforce permissions or approval before execution. [Study: Multiple and parallel function calls](https://developers.openai.com/cookbook/examples/how_to_call_functions_with_chat_models)
+  Define the capability and its input contract, validate every invocation, and enforce permissions or approval before execution. [Study: Configure multiple function calls in one response](https://developers.openai.com/api/reference/resources/responses/methods/create#responses-create-parallel_tool_calls)
 * **Parallel tool calls**
   Define the capability and its input contract, validate every invocation, and enforce permissions or approval before execution. [Study: Parallel function calling](https://developers.openai.com/api/docs/guides/function-calling#parallel-function-calling)
 * **Tool result submission**
@@ -274,15 +274,15 @@ Build a research assistant that:
 * **Semantic similarity**
   Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Semantic similarity metrics](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html)
 * **Cosine similarity**
-  Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Cosine similarity and nearest-neighbor search](https://developers.openai.com/cookbook/examples/semantic_text_search_using_embeddings)
+  Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Compute cosine similarity between embedding vectors](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html)
 * **Semantic search**
   Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Semantic search](https://developers.openai.com/api/docs/guides/retrieval#semantic-search)
 * **Classification**
-  Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Classification with embeddings](https://developers.openai.com/cookbook/examples/classification_using_embeddings)
+  Define clear labels and representative examples, then measure confusion between classes on realistic and edge-case inputs. [Study: Classify vectors with nearest neighbors](https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification)
 * **Clustering**
-  Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Clustering and visualization](https://developers.openai.com/cookbook/examples/clustering)
+  Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Choose and evaluate a clustering algorithm](https://scikit-learn.org/stable/modules/clustering.html)
 * **Recommendations**
-  Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Practical guide to recommendations](https://developers.openai.com/cookbook/examples/recommendation_using_embeddings)
+  Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Design a recommendation-system pipeline](https://developers.google.com/machine-learning/recommendation)
 * **Deduplication**
   Understand the vector operation behind this pattern, choose an appropriate similarity or indexing method, and evaluate retrieval quality. [Study: Use cases](https://developers.openai.com/api/docs/guides/embeddings#use-cases)
 * **Batch embedding**
@@ -367,7 +367,7 @@ The Deep Research API Cookbook demonstrates workflows involving reasoning, plann
 * **Visual question answering**
   Answer from available evidence, attach citations to supported claims, and return an insufficient-evidence result when grounding is weak. [Study: Analyze images](https://developers.openai.com/api/docs/guides/images-vision#analyze-images)
 * **Structured visual extraction**
-  Prepare the visual input correctly, state the analysis task precisely, and verify extracted details against the source image or document. [Study: Practical guide to structured visual extraction](https://developers.openai.com/cookbook/examples/multimodal/using_gpt4_vision_with_function_calling)
+  Prepare the visual input correctly, state the analysis task precisely, and verify extracted details against the source image or document. [Study: Provide images as model input for extraction](https://developers.openai.com/api/docs/guides/images-vision#giving-a-model-images-as-input)
 
 **Practice**
 
@@ -797,7 +797,7 @@ OpenAI defines evals as tests used to determine whether model outputs meet speci
 * **Model-based grading**
   Define representative cases, a measurable success criterion, and a repeatable grading method that can detect regressions. [Study: Model graders](https://developers.openai.com/api/docs/guides/graders#model-graders)
 * **Pairwise comparison**
-  Define representative cases, a measurable success criterion, and a repeatable grading method that can detect regressions. [Study: Practical guide to pairwise comparison](https://developers.openai.com/cookbook/examples/evaluation/how_to_eval_abstractive_summarization)
+  Define representative cases, a measurable success criterion, and a repeatable grading method that can detect regressions. [Study: Compare outputs with LLM judges and model graders](https://developers.openai.com/api/docs/guides/evaluation-best-practices#llm-as-a-judge-and-model-graders)
 * **Human grading**
   Define representative cases, a measurable success criterion, and a repeatable grading method that can detect regressions. [Study: Human evals](https://developers.openai.com/api/docs/guides/evaluation-best-practices#human-evals)
 * **Multi-grader aggregation**
