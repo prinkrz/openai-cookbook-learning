@@ -43,3 +43,5 @@ MANIFEST
 .env*
 
 */chroma_db/*
+*/.local_cache/*
+*/.ipynb_checkpoints/*
